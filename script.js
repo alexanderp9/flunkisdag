@@ -47,7 +47,7 @@ iconCloseBoard.addEventListener('click', () => {
 
 
 menu1Btn.addEventListener('click', () => {
-    menuContent.innerHTML = '<img src="img/human-fall-flat.jpg" alt="Cool Image" style="max-width:80%; height:80%;">';
+    menuContent.innerHTML = '<img src="human-fall-flat.jpg" alt="Cool Image" style="max-width:80%; height:80%;">';
 });
 
 menu2Btn.addEventListener('click', () => {
