@@ -99,7 +99,7 @@ const attendance = {
 
     Stuno: 1,
     GL: 1,
-    Remus: 0,
+    Remus: 1,
     Oznal: 0,
     Fjucks: 1,
     Göksal: 1,
