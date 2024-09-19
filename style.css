@@ -14,7 +14,6 @@ body {
     min-height: 100vh;
     background: url('skybakgrund.jpg') no-repeat;
     background-size: cover;
-    background-position: center;
 }
 
 header {
@@ -277,18 +276,45 @@ header {
     margin-top: 20px;
 }
 
+.responsive-image-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.responsive-image {
+    max-width: 60%;
+    height: auto;
+}
+
 .attendance-list {
     color: white;
     text-align: left;
     font-size: 1.2em;
-    margin-left: -1000px;
     line-height: 1.8em;
+    margin: 10px;
 }
 
 .attendance-list p {
-    margin: 0;
-    padding: 5px 0;
-    font-family: 'Poppins', sans-serif;
+    margin: 5px 0;
+    padding: 5px;
+}
+
+
+@media (max-width: 600px) {
+    .logo {
+        font-size: 2em;
+    }
+
+    .countdown-timer {
+        font-size: 3em;
+    }
+    .attendance-list {
+        font-size: 1em;
+    }
+    .responsive-image {
+        max-width: 90%;
+    }
 }
 
 

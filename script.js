@@ -47,7 +47,11 @@ iconCloseBoard.addEventListener('click', () => {
 
 
 menu1Btn.addEventListener('click', () => {
-    menuContent.innerHTML = '<img src="human-fall-flat.jpg" alt="Cool Image" style="max-width:80%; height:80%;">';
+    menuContent.innerHTML = `
+        <div class="responsive-image-container">
+            <img src="human-fall-flat.jpg" alt="Cool Image" class="responsive-image">
+        </div>
+    `;
 });
 
 menu2Btn.addEventListener('click', () => {
@@ -105,11 +109,9 @@ const attendance = {
 
 function displayAttendance() {
     let content = '<div class="attendance-list">';
-
     for (const name in attendance) {
         content += `<p>${name}: ${attendance[name]}</p>`;
     }
-
     content += '</div>';
     menuContent.innerHTML = content;
 }
