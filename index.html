@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deden</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1 class="logo">Flunkis Lördag</h1>
+    <nav class="navigation">
+        <button class="btnLogin-popup">xD</button>
+    </nav>
+</header>
+
+
+<div class="countdown-wrapper">
+    <div id="countdown" class="countdown-timer">00:00:00</div>
+</div>
+
+<div class="wrapper">
+    <span class="icon-close"><ion-icon name="close-outline"></ion-icon></span>
+
+    <div class="form-box login">
+        <div id="errorMessage" class="error-message" style="display: none;">
+            Fel lösen dachri xD
+        </div>
+        <h2></h2>
+        <form action="#" id="loginForm">
+            <div class="input-box">
+                <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                <input type="password" id="passwordInput" required placeholder="">
+                <label>Password</label>
+            </div>
+            <button type="submit" class="btn">Login</button>
+        </form>
+    </div>
+</div>
+
+<div class="board-wrapper" id="boardWrapper" style="display: none;">
+    <span class="icon-close-board"><ion-icon name="close-outline"></ion-icon></span>
+
+    <div class="menu-tabs">
+        <button class="menu-tab" id="menu1Btn">Content</button>
+        <button class="menu-tab" id="menu2Btn">Närvaro</button>
+    </div>
+
+    <div class="menu-content" id="menuContent">
+        <p>Select a menu to view content</p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
