@@ -77,12 +77,7 @@ function updateCountdown() {
     const targetDate = getNextSaturdayAt20();
     const timeDiff = targetDate - now;
 
-    if (timeDiff <= 0) {
-        document.getElementById('countdown').innerHTML = 'KEKW XD';
-        setTimeout(updateCountdown, 2 * 60 * 60 * 1000);
 
-        return;
-    }
 
     const hours = Math.floor(timeDiff / (1000 * 60 * 60));
     const minutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
@@ -97,13 +92,13 @@ function updateCountdown() {
 
 const attendance = {
 
-    Stuno: 1,
-    GL: 1,
-    Remus: 1,
-    Oznal: 0,
-    Fjucks: 1,
-    Göksal: 1,
-    Totte: 1,
+    Stuno: 2,
+    GL: 2,
+    Remus: 2,
+    Oznal: -1,
+    Fjucks: 2,
+    Göksal: 2,
+    Totte: 2,
     Busgafi: -1
 };
 
