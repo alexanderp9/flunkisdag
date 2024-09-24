@@ -77,8 +77,9 @@ function updateCountdown() {
     
     if (timeDiff <= 0) {
         document.getElementById('countdown').innerHTML = "kekw XD";
-        setTimeout(1000*60*60*2);
-        break;
+        setTimeout(function() {
+            updateCountdown(); }, 1000*60*60*2);
+        return;
     }
 
     const hours = Math.floor(timeDiff / (1000 * 60 * 60));
