@@ -60,8 +60,6 @@ menu2Btn.addEventListener('click', () => {
 
 function getNextSaturdayAt20() {
     const now = new Date();
-
-
     const dayOfWeek = now.getUTCDay();
 
     const daysUntilSaturday = (6 - dayOfWeek + 7) % 7;
@@ -76,8 +74,12 @@ function updateCountdown() {
     const now = new Date();
     const targetDate = getNextSaturdayAt20();
     const timeDiff = targetDate - now;
-
-
+    
+    if (timeDiff <= 0) {
+        document.getElementById('countdown').innerHTML = "kekw XD";
+        setTimeout(1000*60*60*2);
+        break;
+    }
 
     const hours = Math.floor(timeDiff / (1000 * 60 * 60));
     const minutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
