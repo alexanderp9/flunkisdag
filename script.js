@@ -96,13 +96,13 @@ function updateCountdown() {
 const attendance = {
 
     Stuno: 3,
-    GL: 3,
-    Remus: 2,
-    Oznal: -1,
-    Fjucks: 2,
-    Göksal: 3,
-    Totte: 3,
-    Busgafi: -1
+    GL: 4,
+    Remus: 3,
+    Oznal: -2,
+    Fjucks: 3,
+    Göksal: 4,
+    Totte: 4,
+    Busgafi: 1
 };
 
 function displayAttendance() {
